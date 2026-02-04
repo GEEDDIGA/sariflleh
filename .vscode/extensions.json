@@ -1,5 +1,14 @@
 {
-    "recommendations": [
-        "ms-azuretools.vscode-containers"
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "skipFiles": [
+        "/**"
+      ],
+      "program": "${file}"
+    }
+  ]
 }
