@@ -1,18 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
-import { MadeWithDyad } from "@/components/made-with-dyad";
+import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { ArrowRight } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">
-          Start building your amazing project here!
-        </p>
-      </div>
-      <MadeWithDyad />
-    </div>
+    <main className="min-h-screen bg-background text-foreground flex items-center justify-center px-4">
+      <Card className="max-w-xl w-full shadow-lg">
+        <CardHeader>
+          <CardTitle className="text-2xl font-bold">
+            sariflleh Dyad App
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="text-muted-foreground">
+            This is your starter React + TypeScript + shadcn/ui application.
+          </p>
+          <Button className="gap-2">
+            Get started
+            <ArrowRight className="h-4 w-4" />
+          </Button>
+        </CardContent>
+      </Card>
+    </main>
   );
 };
 
